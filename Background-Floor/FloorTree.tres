@@ -1,0 +1,67 @@
+[gd_resource type="AnimationNodeStateMachine" load_steps=24 format=2]
+
+[sub_resource type="AnimationNodeAnimation" id=5]
+animation = "Between-SecL-scroll"
+
+[sub_resource type="AnimationNodeAnimation" id=17]
+animation = "ComeUp"
+
+[sub_resource type="AnimationNodeAnimation" id=10]
+animation = "ScrollFullTTC"
+
+[sub_resource type="AnimationNodeAnimation" id=1]
+animation = "Three-SecL-scroll"
+
+[sub_resource type="AnimationNodeAnimation" id=2]
+animation = "Two-SecL-scroll"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=3]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=4]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=6]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=7]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=8]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=9]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=11]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=12]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=13]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=14]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=15]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=16]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=18]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=19]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=20]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=21]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=22]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=23]
+
+[resource]
+states/Between-SecL-scroll/node = SubResource( 5 )
+states/Between-SecL-scroll/position = Vector2( 607, -24 )
+states/ComeUp/node = SubResource( 17 )
+states/ComeUp/position = Vector2( 739.187, 96.1301 )
+states/ScrollFullTTC/node = SubResource( 10 )
+states/ScrollFullTTC/position = Vector2( 418.187, 208.45 )
+states/Three-SecL-scroll/node = SubResource( 1 )
+states/Three-SecL-scroll/position = Vector2( -29, 31 )
+states/Two-SecL-scroll/node = SubResource( 2 )
+states/Two-SecL-scroll/position = Vector2( -19, 305 )
+transitions = [ "Three-SecL-scroll", "Two-SecL-scroll", SubResource( 3 ), "Two-SecL-scroll", "Three-SecL-scroll", SubResource( 4 ), "Three-SecL-scroll", "Between-SecL-scroll", SubResource( 6 ), "Between-SecL-scroll", "Three-SecL-scroll", SubResource( 7 ), "Two-SecL-scroll", "Between-SecL-scroll", SubResource( 8 ), "Between-SecL-scroll", "Two-SecL-scroll", SubResource( 9 ), "Three-SecL-scroll", "ScrollFullTTC", SubResource( 11 ), "ScrollFullTTC", "Three-SecL-scroll", SubResource( 12 ), "Between-SecL-scroll", "ScrollFullTTC", SubResource( 13 ), "ScrollFullTTC", "Between-SecL-scroll", SubResource( 14 ), "ScrollFullTTC", "Two-SecL-scroll", SubResource( 15 ), "Two-SecL-scroll", "ScrollFullTTC", SubResource( 16 ), "ComeUp", "Three-SecL-scroll", SubResource( 18 ), "Three-SecL-scroll", "ComeUp", SubResource( 19 ), "ComeUp", "Between-SecL-scroll", SubResource( 20 ), "Between-SecL-scroll", "ComeUp", SubResource( 21 ), "ComeUp", "ScrollFullTTC", SubResource( 22 ), "ScrollFullTTC", "ComeUp", SubResource( 23 ) ]
+start_node = "Three-SecL-scroll"
+graph_offset = Vector2( -189.813, 109.544 )

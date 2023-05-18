@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Controls/Tap-to-start.png" type="Texture" id=1]
+[ext_resource path="res://IN-GAME-CONTROLS/Tap_Button.gd" type="Script" id=2]
+
+[node name="Tap-To-Start" type="CanvasLayer"]
+
+[node name="Tap_Button" type="TouchScreenButton" parent="."]
+modulate = Color( 1, 1, 1, 0.231373 )
+position = Vector2( 0, -2 )
+normal = ExtResource( 1 )
+action = "game_tap"
+script = ExtResource( 2 )
